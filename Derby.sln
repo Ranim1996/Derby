@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.32126.315
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Derby.API", "Derby.API\Derby.API.csproj", "{3DBBE78B-331C-44CD-B59E-7C27B2F44B05}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Derby.DB", "Derby.DB\Derby.DB.sqlproj", "{266DE18B-8171-4329-9B55-D27C60850FA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Derby.DataLibrary", "Derby.DataLibrary\Derby.DataLibrary.csproj", "{CAC7C35A-0E9B-4CCE-ADBD-B87B75D3F051}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,16 @@ Global
 		{3DBBE78B-331C-44CD-B59E-7C27B2F44B05}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3DBBE78B-331C-44CD-B59E-7C27B2F44B05}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3DBBE78B-331C-44CD-B59E-7C27B2F44B05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{266DE18B-8171-4329-9B55-D27C60850FA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{266DE18B-8171-4329-9B55-D27C60850FA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{266DE18B-8171-4329-9B55-D27C60850FA0}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{266DE18B-8171-4329-9B55-D27C60850FA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{266DE18B-8171-4329-9B55-D27C60850FA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{266DE18B-8171-4329-9B55-D27C60850FA0}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{CAC7C35A-0E9B-4CCE-ADBD-B87B75D3F051}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAC7C35A-0E9B-4CCE-ADBD-B87B75D3F051}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAC7C35A-0E9B-4CCE-ADBD-B87B75D3F051}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAC7C35A-0E9B-4CCE-ADBD-B87B75D3F051}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
