@@ -19,13 +19,13 @@ namespace Derby.DataLibrary.Internal.DataAccess
         public string GetConnectionString(string name)
         {
             //check env variable if it specified. if it is specified, then the environment is azure, if not then the environment is development.
-            if (string.IsNullOrEmpty(Environment.GetEnvironmentVariable("connectionString")))
+            if (string.IsNullOrEmpty(Environment.GetEnvironmentVariable("DerbyDB")))
             {
                 return _config.GetConnectionString(name);
             }
             else
             {
-                return Environment.GetEnvironmentVariable("connectionString");
+                return Environment.GetEnvironmentVariable("DerbyDB");
             }   
         }
 
