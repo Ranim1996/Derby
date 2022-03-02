@@ -1,5 +1,6 @@
 ﻿using Dapper;
 using Microsoft.Extensions.Configuration;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -17,7 +18,15 @@ namespace Derby.DataLibrary.Internal.DataAccess
         }
         public string GetConnectionString(string name)
         {
-            return _config.GetConnectionString(name);
+            //check env variable if it specified. if it is specified, then the environment is azure, if not then the environment is development.
+            if (string.IsNullOrEmpty(Environment.GetEnvironmentVariable("DerbyDB")))
+            {
+                return _config.GetConnectionString(name);
+            }
+            else
+            {
+                return Environment.GetEnvironmentVariable("DerbyDB");
+            }   
         }
 
         public List<T> LoadData<T, U>(string storedProcedure, U parameters, string connectionStringName)
