@@ -15,7 +15,14 @@ namespace UserService.DataLibrary.DataAccess
 
         public void UpdateUser(UserModel user)
         {
-            _sql.SaveData("dbo.UpdateUser", new { user.Id, user.FirstName, user.LastName, user.EmailAddress }, "UserDB");
+            var p = new
+            {
+                userId = user.Id,
+                userFirstName = user.FirstName,
+                userLastName = user.LastName,
+                userEmail = user.EmailAddress
+            };
+            _sql.SaveData("dbo.UpdateUser", p , "UserDB");
         }
 
         public List<UserModel> GetUsers()
@@ -27,14 +34,14 @@ namespace UserService.DataLibrary.DataAccess
 
         public List<UserModel> GetUserById(string id)
         {
-            var output = _sql.LoadData<UserModel, dynamic>("dbo.GetUserById", new { id }, "UserDB");
+            var output = _sql.LoadData<UserModel, dynamic>("dbo.GetUserById", new { userId=id }, "UserDB");
 
             return output;
         }
 
         public void DeleteUser(string id)
         {
-            _sql.SaveData("dbo.DeleteUser", new { id }, "UserDB");
+            _sql.SaveData("dbo.DeleteUser", new { userId=id }, "UserDB");
         }
     }
 }
