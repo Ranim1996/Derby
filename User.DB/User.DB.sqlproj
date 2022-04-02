@@ -68,5 +68,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="User.DB.publish.xml" />
+    <None Include="AZURE_User.DB.publish.xml" />
   </ItemGroup>
 </Project>
