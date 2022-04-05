@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'DerbyUserServiceApi'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_6290F164ED3A4E9B93C2E18EC98536F8 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_8B19E49C31E4439685EB6F3B190106B8 }}
           package: .
