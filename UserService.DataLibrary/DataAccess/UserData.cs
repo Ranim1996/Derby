@@ -27,7 +27,6 @@ namespace UserService.DataLibrary.DataAccess
                 userLastName = user.LastName,
                 userEmail = user.EmailAddress
             };
-
             if (string.IsNullOrEmpty(p.userId))
             {
                 throw new ArgumentException("User ID Could not be null or empty");
@@ -47,7 +46,6 @@ namespace UserService.DataLibrary.DataAccess
             {
                 throw new ArgumentException("Email Could not be null or empty");
             }
-
             _sql.SaveData("dbo.UpdateUser", p , "UserDB");
         }
 
@@ -65,7 +63,6 @@ namespace UserService.DataLibrary.DataAccess
             {
                 throw new ArgumentException("Id Could not be null or empty");
             }
-
             var output = _sql.LoadData<UserModel, dynamic>("dbo.GetUserById", new { userId=id }, "UserDB");
 
             return output;
