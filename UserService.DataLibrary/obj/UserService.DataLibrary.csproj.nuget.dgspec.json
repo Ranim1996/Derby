@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Gebruiker\\Desktop\\Derby\\UserService.DataLibrary\\UserService.DataLibrary.csproj": {}
+    "C:\\Users\\Gebruiker\\Desktop\\git\\Derby\\UserService.DataLibrary\\UserService.DataLibrary.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Gebruiker\\Desktop\\Derby\\UserService.DataLibrary\\UserService.DataLibrary.csproj": {
+    "C:\\Users\\Gebruiker\\Desktop\\git\\Derby\\UserService.DataLibrary\\UserService.DataLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gebruiker\\Desktop\\Derby\\UserService.DataLibrary\\UserService.DataLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\Gebruiker\\Desktop\\git\\Derby\\UserService.DataLibrary\\UserService.DataLibrary.csproj",
         "projectName": "UserService.DataLibrary",
-        "projectPath": "C:\\Users\\Gebruiker\\Desktop\\Derby\\UserService.DataLibrary\\UserService.DataLibrary.csproj",
+        "projectPath": "C:\\Users\\Gebruiker\\Desktop\\git\\Derby\\UserService.DataLibrary\\UserService.DataLibrary.csproj",
         "packagesPath": "C:\\Users\\Gebruiker\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gebruiker\\Desktop\\Derby\\UserService.DataLibrary\\obj\\",
+        "outputPath": "C:\\Users\\Gebruiker\\Desktop\\git\\Derby\\UserService.DataLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

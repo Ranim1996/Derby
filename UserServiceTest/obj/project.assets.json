@@ -6529,11 +6529,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Gebruiker\\Desktop\\Derby\\UserServiceTest\\UserServiceTest.csproj",
+      "projectUniqueName": "C:\\Users\\Gebruiker\\Desktop\\git\\Derby\\UserServiceTest\\UserServiceTest.csproj",
       "projectName": "UserServiceTest",
-      "projectPath": "C:\\Users\\Gebruiker\\Desktop\\Derby\\UserServiceTest\\UserServiceTest.csproj",
+      "projectPath": "C:\\Users\\Gebruiker\\Desktop\\git\\Derby\\UserServiceTest\\UserServiceTest.csproj",
       "packagesPath": "C:\\Users\\Gebruiker\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Gebruiker\\Desktop\\Derby\\UserServiceTest\\obj\\",
+      "outputPath": "C:\\Users\\Gebruiker\\Desktop\\git\\Derby\\UserServiceTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -6554,8 +6554,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Gebruiker\\Desktop\\Derby\\UserService.DataLibrary\\UserService.DataLibrary.csproj": {
-              "projectPath": "C:\\Users\\Gebruiker\\Desktop\\Derby\\UserService.DataLibrary\\UserService.DataLibrary.csproj"
+            "C:\\Users\\Gebruiker\\Desktop\\git\\Derby\\UserService.DataLibrary\\UserService.DataLibrary.csproj": {
+              "projectPath": "C:\\Users\\Gebruiker\\Desktop\\git\\Derby\\UserService.DataLibrary\\UserService.DataLibrary.csproj"
             }
           }
         }
