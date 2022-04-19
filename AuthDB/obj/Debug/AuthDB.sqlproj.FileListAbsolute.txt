@@ -1,0 +1,11 @@
+C:\Users\Gebruiker\Desktop\AuthService\AuthService\AuthDB\bin\Debug\AuthDB.dacpac
+C:\Users\Gebruiker\Desktop\AuthService\AuthService\AuthDB\bin\Debug\AuthDB.dll
+C:\Users\Gebruiker\Desktop\AuthService\AuthService\AuthDB\bin\Debug\AuthDB.pdb
+C:\Users\Gebruiker\Desktop\AuthService\AuthService\AuthDB\obj\Debug\AuthDB.sqlproj.AssemblyReference.cache
+C:\Users\Gebruiker\Desktop\AuthService\AuthService\AuthDB\obj\Debug\AuthDB.dll
+C:\Users\Gebruiker\Desktop\AuthService\AuthService\AuthDB\obj\Debug\AuthDB.pdb
+C:\Users\Gebruiker\Desktop\Derby\AuthService\AuthDB\bin\Debug\AuthDB.dacpac
+C:\Users\Gebruiker\Desktop\Derby\AuthService\AuthDB\bin\Debug\AuthDB.dll
+C:\Users\Gebruiker\Desktop\Derby\AuthService\AuthDB\bin\Debug\AuthDB.pdb
+C:\Users\Gebruiker\Desktop\Derby\AuthService\AuthDB\obj\Debug\AuthDB.dll
+C:\Users\Gebruiker\Desktop\Derby\AuthService\AuthDB\obj\Debug\AuthDB.pdb
