@@ -60,14 +60,14 @@
     <Folder Include="Tables" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="AZURE_User.DB.publish.xml" />
+    <None Include="User.DB.publish.xml" />
+  </ItemGroup>
+  <ItemGroup>
     <Build Include="StoredProcedures\DeleteUser.sql" />
     <Build Include="StoredProcedures\GetUserById.sql" />
     <Build Include="StoredProcedures\GetUsers.sql" />
     <Build Include="StoredProcedures\UpdateUser.sql" />
     <Build Include="Tables\User.sql" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="AZURE_User.DB.publish.xml" />
-    <None Include="User.DB.publish.xml" />
   </ItemGroup>
 </Project>

@@ -10,3 +10,15 @@ C:\Users\Gebruiker\Desktop\Derby\AuthService\UserService.DataLibrary\bin\Debug\n
 C:\Users\Gebruiker\Desktop\Derby\AuthService\UserService.DataLibrary\obj\Debug\net5.0\UserService.DataLibrary.dll
 C:\Users\Gebruiker\Desktop\Derby\AuthService\UserService.DataLibrary\obj\Debug\net5.0\ref\UserService.DataLibrary.dll
 C:\Users\Gebruiker\Desktop\Derby\AuthService\UserService.DataLibrary\obj\Debug\net5.0\UserService.DataLibrary.pdb
+C:\Users\Gebruiker\Desktop\git\Derby\UserService.DataLibrary\bin\Debug\net5.0\UserService.DataLibrary.deps.json
+C:\Users\Gebruiker\Desktop\git\Derby\UserService.DataLibrary\bin\Debug\net5.0\UserService.DataLibrary.dll
+C:\Users\Gebruiker\Desktop\git\Derby\UserService.DataLibrary\bin\Debug\net5.0\ref\UserService.DataLibrary.dll
+C:\Users\Gebruiker\Desktop\git\Derby\UserService.DataLibrary\bin\Debug\net5.0\UserService.DataLibrary.pdb
+C:\Users\Gebruiker\Desktop\git\Derby\UserService.DataLibrary\obj\Debug\net5.0\UserService.DataLibrary.csproj.AssemblyReference.cache
+C:\Users\Gebruiker\Desktop\git\Derby\UserService.DataLibrary\obj\Debug\net5.0\UserService.DataLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gebruiker\Desktop\git\Derby\UserService.DataLibrary\obj\Debug\net5.0\UserService.DataLibrary.AssemblyInfoInputs.cache
+C:\Users\Gebruiker\Desktop\git\Derby\UserService.DataLibrary\obj\Debug\net5.0\UserService.DataLibrary.AssemblyInfo.cs
+C:\Users\Gebruiker\Desktop\git\Derby\UserService.DataLibrary\obj\Debug\net5.0\UserService.DataLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Gebruiker\Desktop\git\Derby\UserService.DataLibrary\obj\Debug\net5.0\UserService.DataLibrary.dll
+C:\Users\Gebruiker\Desktop\git\Derby\UserService.DataLibrary\obj\Debug\net5.0\ref\UserService.DataLibrary.dll
+C:\Users\Gebruiker\Desktop\git\Derby\UserService.DataLibrary\obj\Debug\net5.0\UserService.DataLibrary.pdb
