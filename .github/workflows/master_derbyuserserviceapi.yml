@@ -23,10 +23,10 @@ jobs:
           include-prerelease: true
 
       - name: Build with dotnet
-        run: dotnet build UserService/UserService.API/UserService.API.csproj --configuration Release
+        run: dotnet build UserService.API/UserService.API.csproj --configuration Release
 
       - name: dotnet publish
-        run: dotnet publish UserService/UserService.API/UserService.API.csproj -c Release -o ${{env.DOTNET_ROOT}}/myapp
+        run: dotnet publish UserService.API/UserService.API.csproj -c Release -o ${{env.DOTNET_ROOT}}/myapp
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'DerbyUserServiceApi'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_8B19E49C31E4439685EB6F3B190106B8 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_5EDF55D2CD654BC1948DA47A2FB11A26 }}
           package: .
