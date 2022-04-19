@@ -1,8 +1,8 @@
-﻿using UserService.DataLibrary.DataAccess;
-using UserService.DataLibrary.Models;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System;
+using UserService.DataLibrary.DataAccess;
+using UserService.DataLibrary.Models;
 
 namespace UserService.API.Controllers
 {
