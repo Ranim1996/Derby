@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MIQ3k4dlON0sf96+L9IWeX0hbhQrKoRxu4NtgwUnqiYGy+jmLCLwEC/z+3exIaUxA8NEFidkq0gqU8cG1XUnzw==",
+  "dgSpecHash": "E+7UsvPpqbIak/sEnayW3/dzViQeas+pqwZa4u1wKJdNEu4/7rblxqRIyhAIs7JGeQEbve6xSylCE7qMBpnhAw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Gebruiker\\Desktop\\Derby\\AuthService.API\\AuthService.API.csproj",
+  "projectFilePath": "C:\\Users\\Gebruiker\\Desktop\\git\\Derby\\AuthService.API\\AuthService.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Gebruiker\\.nuget\\packages\\azure.core\\1.6.0\\azure.core.1.6.0.nupkg.sha512",
     "C:\\Users\\Gebruiker\\.nuget\\packages\\azure.core.amqp\\1.0.0\\azure.core.amqp.1.0.0.nupkg.sha512",

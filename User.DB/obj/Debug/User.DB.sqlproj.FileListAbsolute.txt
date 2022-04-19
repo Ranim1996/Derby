@@ -1,5 +1,0 @@
-C:\Users\Gebruiker\Desktop\Derby\AuthService\User.DB\bin\Debug\User.DB.dacpac
-C:\Users\Gebruiker\Desktop\Derby\AuthService\User.DB\bin\Debug\User.DB.dll
-C:\Users\Gebruiker\Desktop\Derby\AuthService\User.DB\bin\Debug\User.DB.pdb
-C:\Users\Gebruiker\Desktop\Derby\AuthService\User.DB\obj\Debug\User.DB.dll
-C:\Users\Gebruiker\Desktop\Derby\AuthService\User.DB\obj\Debug\User.DB.pdb

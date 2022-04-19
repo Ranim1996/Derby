@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vte75DtpYR4dSi0KGt8vujJPz44PSPygDbM/1/ah71GA3wZr3jabUSA6OXsazlRjl1O4kh6iSuyodjm7W9bx8Q==",
+  "dgSpecHash": "pSrjcbDkJElkUx31mwlr66rEHDTs+0V6GOBNksz4gpocEu9RqQqWtF40P2lSo1L28nTeVElPpfPkINm9md2i4w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Gebruiker\\Desktop\\Derby\\UserService.API\\UserService.API.csproj",
+  "projectFilePath": "C:\\Users\\Gebruiker\\Desktop\\git\\Derby\\UserService.API\\UserService.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Gebruiker\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\Gebruiker\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",

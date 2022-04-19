@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "42O3NN/0Zz0tYw+82WkaMnj9d2e7CrrEQ4njrL6qooc5ft+qdDAHV2p2DC6ypplVl9LprWV7zi5UE7LFZt4NCg==",
+  "dgSpecHash": "CArJn0aw0/DQfDFtw2ZquGvApGHDXbgC6QjWfD9fku9ibsvS+V0AKzdNOqSmYEgWCaOqPSK1zmuWnezQMAOBtA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Gebruiker\\Desktop\\Derby\\AuthService.DataLibrary\\AuthService.DataLibrary.csproj",
+  "projectFilePath": "C:\\Users\\Gebruiker\\Desktop\\git\\Derby\\AuthService.DataLibrary\\AuthService.DataLibrary.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Gebruiker\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\Gebruiker\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.3\\microsoft.aspnetcore.cryptography.internal.6.0.3.nupkg.sha512",
