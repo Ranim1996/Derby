@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Azure.Messaging.ServiceBus" Version="7.0.0" />
+    <PackageReference Include="Azure.Messaging.ServiceBus" Version="7.7.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="5.0.14" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.14" />
@@ -23,6 +23,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AuthService.DataLibrary\AuthService.DataLibrary.csproj" />
+    <ProjectReference Include="..\Derby.MessageBus\Derby.MessageBus.csproj" />
   </ItemGroup>
 
 </Project>

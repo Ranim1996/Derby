@@ -2,6 +2,7 @@ using AuthService.API.Configuration;
 using AuthService.API.Data;
 using AuthService.DataLibrary.DataAccess;
 using AuthService.DataLibrary.Internal.DataAccess;
+using Derby.MessageBus;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
@@ -77,6 +78,7 @@ namespace AuthService.API
 
             services.AddTransient<ISqlDataAccess, SqlDataAccess>();
             services.AddTransient<IAccountData, AccountData>();
+            services.AddSingleton<IMessageBus, AzureServiceBusMessageBus>();
 
             services.AddControllersWithViews();
             services.AddSwaggerGen(setup =>
