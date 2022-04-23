@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Derby.MessageBus;
 
 namespace AuthService.DataLibrary.Models
 {
-    public class AccountModel
+    public class AccountModel: BaseMessage
     {
         public string Id { get; set; }
         public string FirstName { get; set; }

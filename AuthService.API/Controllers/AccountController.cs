@@ -5,6 +5,7 @@ using AuthService.DataLibrary.Models;
 using AuthService.DataLibrary.Models.DTOs;
 using AuthService.DataLibrary.Models.DTOs.Requests;
 using AuthService.DataLibrary.Models.DTOs.Responses;
+using Derby.MessageBus;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -30,9 +31,10 @@ namespace AuthService.API.Controllers
         private readonly TokenValidationParameters _tokenValidationParams;
         private readonly ApplicationDbContext _context;
         private readonly RoleManager<IdentityRole> _roleManager;
+        private readonly IMessageBus _messageBus;
 
         public AccountController(IAccountData accountData, UserManager<IdentityUser> userManager, IOptionsMonitor<JwtConfig> optionsMonitor,
-            TokenValidationParameters tokenValidationParams, ApplicationDbContext Context, RoleManager<IdentityRole> roleManager)
+            TokenValidationParameters tokenValidationParams, ApplicationDbContext Context, RoleManager<IdentityRole> roleManager, IMessageBus messageBus)
         {
             _accountData = accountData;
             _userManager = userManager;
@@ -40,6 +42,7 @@ namespace AuthService.API.Controllers
             _tokenValidationParams = tokenValidationParams;
             _context = Context;
             _roleManager = roleManager;
+            _messageBus = messageBus;
         }
 
         [HttpGet]
@@ -124,6 +127,9 @@ namespace AuthService.API.Controllers
                     };
 
                     await _accountData.CreateAccount(accountModel);
+
+                    //TODO: the topic name must be added in the appsettingsjson
+                    await _messageBus.PublishMessage(accountModel, "createusertopic");
 
                     return Ok(jwtToken);
                 }
