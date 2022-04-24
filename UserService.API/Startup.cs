@@ -4,6 +4,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using UserService.API.Extention;
+using UserService.API.Messaging;
 using UserService.DataLibrary.DataAccess;
 using UserService.DataLibrary.Internal.DataAccess;
 
@@ -29,6 +31,7 @@ namespace UserService.API
             });
             services.AddTransient<ISqlDataAccess, SqlDataAccess>();
             services.AddTransient<IUserData, UserData>();
+            services.AddSingleton<IAzureServiceBusConsumer, AzureServiceBusConsumer>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -51,6 +54,8 @@ namespace UserService.API
             {
                 endpoints.MapControllers();
             });
+
+            app.UseAzureServiceBusConsumer();
         }
     }
 }

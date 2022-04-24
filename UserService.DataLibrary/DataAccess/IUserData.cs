@@ -6,6 +6,7 @@ namespace UserService.DataLibrary.DataAccess
     public interface IUserData
     {
         List<UserModel> GetUsers();
+        void AddUser(UserModel user);
         void UpdateUser(UserModel user);
         List<UserModel> GetUserById(string id);
         void DeleteUser(string id);
