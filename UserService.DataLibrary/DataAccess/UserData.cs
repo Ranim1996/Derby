@@ -77,5 +77,18 @@ namespace UserService.DataLibrary.DataAccess
 
             _sql.SaveData("dbo.DeleteUser", new { userId=id }, "UserDB");
         }
+
+        public void AddUser(UserModel user)
+        {
+            var p = new
+            {
+                userId = user.Id,
+                userFirstName = user.FirstName,
+                userLastName = user.LastName,
+                userEmail = user.EmailAddress
+            };
+          
+            _sql.SaveData("dbo.AddUser", p, "UserDB");
+        }
     }
 }

@@ -21,13 +21,13 @@ namespace AuthService.DataLibrary.Internal.DataAccess
         public string GetConnectionString(string name)
         {
             //check env variable if it specified. if it is specified, then the environment is azure, if not then the environment is development.
-            if (string.IsNullOrEmpty(Environment.GetEnvironmentVariable("UserDB")))
+            if (string.IsNullOrEmpty(Environment.GetEnvironmentVariable("AuthDB")))
             {
                 return _config.GetConnectionString(name);
             }
             else
             {
-                return Environment.GetEnvironmentVariable("UserDB");
+                return Environment.GetEnvironmentVariable("AuthDB");
             }
         }
 
