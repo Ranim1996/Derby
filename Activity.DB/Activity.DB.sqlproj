@@ -56,5 +56,18 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="Tables" />
+    <Folder Include="StoredProcedures" />
+    <Folder Include="StoredProcedures\RequestStoredProcedures" />
+    <Folder Include="StoredProcedures\EventStoredProcedures" />
+    <Folder Include="StoredProcedures\UserStoredProcedures" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Tables\User.sql" />
+    <Build Include="Tables\Request.sql" />
+    <Build Include="Tables\Event.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Activity.DB.publish.xml" />
   </ItemGroup>
 </Project>

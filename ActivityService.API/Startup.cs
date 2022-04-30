@@ -38,6 +38,7 @@ namespace ActivityService.API
             services.AddTransient<ISqlDataAccess, SqlDataAccess>();
             services.AddTransient<IEventData, EventData>();
             services.AddTransient<IRequestData, RequestData>();
+            services.AddTransient<IUserData, UserData>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

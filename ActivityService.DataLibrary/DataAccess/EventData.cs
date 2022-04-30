@@ -20,6 +20,7 @@ namespace ActivityService.DataLibrary.DataAccess
             var p = new
             {
                 eventId = eventModel.Id,
+                userId = eventModel.Id,
                 eventTitle = eventModel.Title,
                 eventDescription = eventModel.Description,
                 eventWhen= eventModel.When,
@@ -53,6 +54,7 @@ namespace ActivityService.DataLibrary.DataAccess
             var p = new
             {
                 eventId = eventModel.Id,
+                userId = eventModel.Id,
                 eventTitle = eventModel.Title,
                 eventDescription = eventModel.Description,
                 eventWhen = eventModel.When,
