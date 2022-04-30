@@ -86,15 +86,15 @@ namespace AuthService.API.Controllers
                     {
                         var t = new IdentityRole
                         {
-                            Name = "USER"
+                            Name = "ADMIN"
                         };
-                        var existingRole = await _roleManager.FindByNameAsync(new IdentityRole { Name = "USER"}.Name);
+                        var existingRole = await _roleManager.FindByNameAsync(new IdentityRole { Name = "ADMIN"}.Name);
 
                         if (existingRole == null)
                         {
                             await _roleManager.CreateAsync(t);
                         }
-                        await _userManager.AddToRoleAsync(newUser, "USER");
+                        await _userManager.AddToRoleAsync(newUser, "ADMIN");
                         
                     }
                     catch (Exception ex)
