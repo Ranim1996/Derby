@@ -24,9 +24,17 @@ namespace ActivityService.API.Controllers
 
         [HttpGet]
         [Route("getrequestsbyUserId")]
-        public List<RequestModel> GetRequestById(string id)
+        public List<RequestModel> GetRequestByUserId(string id)
         {
             List<RequestModel> requests = _requestData.GetRequestsByUserId(id);
+            return requests;
+        }
+
+        [HttpGet]
+        [Route("getrequestsbyId")]
+        public List<RequestModel> GetRequestById(int id)
+        {
+            List<RequestModel> requests = _requestData.GetRequestById(id);
             return requests;
         }
 

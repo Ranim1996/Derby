@@ -8,7 +8,7 @@ namespace ActivityService.DataLibrary.Models
 {
     public class EventModel
     {
-        public string Id { get; set; }
+        public int Id { get; set; }
         public string UserId { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }

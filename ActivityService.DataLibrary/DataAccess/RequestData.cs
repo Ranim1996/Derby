@@ -58,5 +58,12 @@ namespace ActivityService.DataLibrary.DataAccess
 
             _sql.SaveData("dbo.UpdateRequest", p, "ActivityDB");
         }
+
+        public List<RequestModel> GetRequestById(int id)
+        {
+            var output = _sql.LoadData<RequestModel, dynamic>("dbo.GetRequestById", new { requestId = id }, "ActivityDB");
+
+            return output;
+        }
     }
 }

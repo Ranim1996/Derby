@@ -8,7 +8,7 @@ namespace ActivityService.DataLibrary.DataAccess.Interfaces
         List<EventModel> GetEvents();
         void AddEvent(EventModel eventModel);
         void UpdateEvent(EventModel eventModel);
-        List<EventModel> GetEventById(string id);
+        List<EventModel> GetEventsByUserId(int id);
         void DeleteEvent(string id);
     }
 }
