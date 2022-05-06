@@ -23,10 +23,10 @@ namespace ActivityService.API.Controllers
         }
 
         [HttpGet]
-        [Route("geteventbyId")]
-        public List<EventModel> GetEventById(string id)
+        [Route("geteventbyUserId")]
+        public List<EventModel> GetEventsByUserId(int id)
         {
-            List<EventModel> events = _eventData.GetEventById(id);
+            List<EventModel> events = _eventData.GetEventsByUserId(id);
             return events;
         }
 

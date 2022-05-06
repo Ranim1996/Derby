@@ -72,6 +72,7 @@
     <Build Include="StoredProcedures\RequestStoredProcedures\GetRequestsByUserId.sql" />
     <Build Include="StoredProcedures\RequestStoredProcedures\GetRequests.sql" />
     <Build Include="StoredProcedures\RequestStoredProcedures\DeleteRequest.sql" />
+    <Build Include="StoredProcedures\RequestStoredProcedures\GetRequestById.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Activity.DB.publish.xml" />

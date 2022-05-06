@@ -35,7 +35,7 @@ namespace ActivityService.DataLibrary.DataAccess
             _sql.SaveData("dbo.DeleteEvent", new { eventId = id }, "ActivityDB");
         }
 
-        public List<EventModel> GetEventById(string id)
+        public List<EventModel> GetEventsByUserId(int id)
         {
             var output = _sql.LoadData<EventModel, dynamic>("dbo.GetEventById", new { eventId = id }, "ActivityDB");
 
