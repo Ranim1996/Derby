@@ -19,8 +19,7 @@ namespace ActivityService.DataLibrary.DataAccess
         {
             var p = new
             {
-                requestId = requestModel.Id,
-                userId = requestModel.Id,
+                userId = requestModel.UserId,
                 requestTitle = requestModel.Title,
                 requestDescription = requestModel.Description,
             };
@@ -28,14 +27,14 @@ namespace ActivityService.DataLibrary.DataAccess
             _sql.SaveData("dbo.AddRequest", p, "ActivityDB");
         }
 
-        public void DeleteRequest(string id)
+        public void DeleteRequest(int requestId, string userId)
         {
-            _sql.SaveData("dbo.DeleteRequest", new { requestId = id }, "ActivityDB");
+            _sql.SaveData("dbo.DeleteRequest", new { requestId = requestId, userId = userId }, "ActivityDB");
         }
 
-        public List<RequestModel> GetRequestById(string id)
+        public List<RequestModel> GetRequestsByUserId(string userId)
         {
-            var output = _sql.LoadData<RequestModel, dynamic>("dbo.GetRequestById", new { requestId = id }, "ActivityDB");
+            var output = _sql.LoadData<RequestModel, dynamic>("dbo.GetRequestsByUserId", new { userId = userId }, "ActivityDB");
 
             return output;
         }
@@ -51,8 +50,8 @@ namespace ActivityService.DataLibrary.DataAccess
         {
             var p = new
             {
-                requestId = requestModel.Id,
-                userId = requestModel.Id,
+                requestId =requestModel.Id,
+                userId = requestModel.UserId,
                 requestTitle = requestModel.Title,
                 requestDescription = requestModel.Description,
             };

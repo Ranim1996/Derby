@@ -8,7 +8,7 @@ namespace ActivityService.DataLibrary.DataAccess.Interfaces
         List<RequestModel> GetRequests();
         void AddRequest(RequestModel requestModel);
         void UpdateRequest(RequestModel requestModel);
-        List<RequestModel> GetRequestById(string id);
-        void DeleteRequest(string id);
+        List<RequestModel> GetRequestsByUserId(string id);
+        void DeleteRequest(int requestId, string userId);
     }
 }
