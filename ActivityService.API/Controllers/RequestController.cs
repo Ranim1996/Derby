@@ -23,10 +23,10 @@ namespace ActivityService.API.Controllers
         }
 
         [HttpGet]
-        [Route("getrequestbyId")]
+        [Route("getrequestsbyUserId")]
         public List<RequestModel> GetRequestById(string id)
         {
-            List<RequestModel> requests = _requestData.GetRequestById(id);
+            List<RequestModel> requests = _requestData.GetRequestsByUserId(id);
             return requests;
         }
 
@@ -46,9 +46,9 @@ namespace ActivityService.API.Controllers
 
         [HttpDelete]
         [Route("deleterequest")]
-        public void DeleteRequest(string id)
+        public void DeleteRequest(int requestId, string userId)
         {
-            _requestData.DeleteRequest(id);
+            _requestData.DeleteRequest(requestId, userId);
         }
     }
 }
