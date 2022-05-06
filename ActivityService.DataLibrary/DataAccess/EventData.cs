@@ -19,25 +19,24 @@ namespace ActivityService.DataLibrary.DataAccess
         {
             var p = new
             {
-                eventId = eventModel.Id,
-                userId = eventModel.Id,
+                userId = eventModel.UserId,
                 eventTitle = eventModel.Title,
                 eventDescription = eventModel.Description,
-                eventWhen= eventModel.When,
-                eventWhere = eventModel.Where
+                eventDate = eventModel.When,
+                eventLocation = eventModel.Where
             };
 
             _sql.SaveData("dbo.AddEvent", p, "ActivityDB");
         }
 
-        public void DeleteEvent(string id)
+        public void DeleteEvent(int eventId, string userId)
         {
-            _sql.SaveData("dbo.DeleteEvent", new { eventId = id }, "ActivityDB");
+            _sql.SaveData("dbo.DeleteEvent", new { eventId = eventId, userId = userId }, "ActivityDB");
         }
 
-        public List<EventModel> GetEventsByUserId(int id)
+        public List<EventModel> GetEventsByUserId(string userId)
         {
-            var output = _sql.LoadData<EventModel, dynamic>("dbo.GetEventById", new { eventId = id }, "ActivityDB");
+            var output = _sql.LoadData<EventModel, dynamic>("dbo.GetEventsByUserId", new { userId = userId }, "ActivityDB");
 
             return output;
         }
@@ -54,14 +53,21 @@ namespace ActivityService.DataLibrary.DataAccess
             var p = new
             {
                 eventId = eventModel.Id,
-                userId = eventModel.Id,
+                userId = eventModel.UserId,
                 eventTitle = eventModel.Title,
                 eventDescription = eventModel.Description,
-                eventWhen = eventModel.When,
-                eventWhere = eventModel.Where
+                eventDate = eventModel.When,
+                eventLocation = eventModel.Where
             };
 
             _sql.SaveData("dbo.UpdateEvent", p, "ActivityDB");
+        }
+
+        public List<EventModel> GetEventById(int eventId)
+        {
+            var output = _sql.LoadData<EventModel, dynamic>("dbo.GetEventById", new { eventId = eventId }, "ActivityDB");
+
+            return output;
         }
     }
 }

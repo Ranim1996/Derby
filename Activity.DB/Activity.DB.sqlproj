@@ -73,6 +73,12 @@
     <Build Include="StoredProcedures\RequestStoredProcedures\GetRequests.sql" />
     <Build Include="StoredProcedures\RequestStoredProcedures\DeleteRequest.sql" />
     <Build Include="StoredProcedures\RequestStoredProcedures\GetRequestById.sql" />
+    <Build Include="StoredProcedures\EventStoredProcedures\AddEvent.sql" />
+    <Build Include="StoredProcedures\EventStoredProcedures\UpdateEvent.sql" />
+    <Build Include="StoredProcedures\EventStoredProcedures\DeleteEvent.sql" />
+    <Build Include="StoredProcedures\EventStoredProcedures\GetEvents.sql" />
+    <Build Include="StoredProcedures\EventStoredProcedures\GetEventsByUserId.sql" />
+    <Build Include="StoredProcedures\EventStoredProcedures\GetEventById.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Activity.DB.publish.xml" />

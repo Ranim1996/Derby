@@ -23,10 +23,18 @@ namespace ActivityService.API.Controllers
         }
 
         [HttpGet]
-        [Route("geteventbyUserId")]
-        public List<EventModel> GetEventsByUserId(int id)
+        [Route("geteventsbyUserId")]
+        public List<EventModel> GetEventsByUserId(string userId)
         {
-            List<EventModel> events = _eventData.GetEventsByUserId(id);
+            List<EventModel> events = _eventData.GetEventsByUserId(userId);
+            return events;
+        }
+
+        [HttpGet]
+        [Route("geteventsbyId")]
+        public List<EventModel> GetEventsId(int eventId)
+        {
+            List<EventModel> events = _eventData.GetEventById(eventId);
             return events;
         }
 
@@ -46,9 +54,9 @@ namespace ActivityService.API.Controllers
 
         [HttpDelete]
         [Route("deleteEvent")]
-        public void DeleteEvent(string id)
+        public void DeleteEvent(int eventId, string userId)
         {
-            _eventData.DeleteEvent(id);
+            _eventData.DeleteEvent(eventId, userId);
         }
     }
 }
