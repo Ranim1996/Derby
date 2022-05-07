@@ -51,7 +51,6 @@ namespace ActivityService.DataLibrary.DataAccess
             var p = new
             {
                 requestId =requestModel.Id,
-                userId = requestModel.UserId,
                 requestTitle = requestModel.Title,
                 requestDescription = requestModel.Description,
             };
