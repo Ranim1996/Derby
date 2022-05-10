@@ -1,5 +1,6 @@
 ﻿using ActivityService.DataLibrary.DataAccess.Interfaces;
 using ActivityService.DataLibrary.Models;
+using ActivityService.DataLibrary.Models.DTO;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 
@@ -57,6 +58,21 @@ namespace ActivityService.API.Controllers
         public void DeleteRequest(int requestId, string userId)
         {
             _requestData.DeleteRequest(requestId, userId);
+        }
+
+        [HttpPost]
+        [Route("offerhelp")]
+        public void JoinEvent(UserRequestModel userRequestModel)
+        {
+            _requestData.OfferHelp(userRequestModel);
+        }
+
+        [HttpGet]
+        [Route("getresponses")]
+        public List<UserRequestDTO> GetRequestResponses(int requestId)
+        {
+            List<UserRequestDTO> userRequestDTOs = _requestData.GetRequestResponses(requestId);
+            return userRequestDTOs;
         }
     }
 }
