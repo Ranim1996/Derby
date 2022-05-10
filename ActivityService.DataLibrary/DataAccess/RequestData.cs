@@ -1,6 +1,7 @@
 ﻿using ActivityService.DataLibrary.DataAccess.Interfaces;
 using ActivityService.DataLibrary.Internal.DataAccess;
 using ActivityService.DataLibrary.Models;
+using ActivityService.DataLibrary.Models.DTO;
 using System;
 using System.Collections.Generic;
 
@@ -61,6 +62,24 @@ namespace ActivityService.DataLibrary.DataAccess
         public List<RequestModel> GetRequestById(int id)
         {
             var output = _sql.LoadData<RequestModel, dynamic>("dbo.GetRequestById", new { requestId = id }, "ActivityDB");
+
+            return output;
+        }
+
+        public void OfferHelp(UserRequestModel userRequestModel)
+        {
+            var p = new
+            {
+                requestId = userRequestModel.RequestId,
+                userId = userRequestModel.UserId
+            };
+
+            _sql.SaveData("dbo.OfferHelp", p, "ActivityDB");
+        }
+
+        public List<UserRequestDTO> GetRequestResponses(int requestId)
+        {
+            var output = _sql.LoadData<UserRequestDTO, dynamic>("dbo.GetResponses", new { requestId = requestId }, "ActivityDB");
 
             return output;
         }
