@@ -1,6 +1,7 @@
 ﻿using ActivityService.DataLibrary.DataAccess.Interfaces;
 using ActivityService.DataLibrary.Internal.DataAccess;
 using ActivityService.DataLibrary.Models;
+using ActivityService.DataLibrary.Models.DTO;
 using System;
 using System.Collections.Generic;
 
@@ -66,6 +67,24 @@ namespace ActivityService.DataLibrary.DataAccess
         public List<EventModel> GetEventById(int eventId)
         {
             var output = _sql.LoadData<EventModel, dynamic>("dbo.GetEventById", new { eventId = eventId }, "ActivityDB");
+
+            return output;
+        }
+
+        public void JoinEvent(UserEventModel userEventModel)
+        {
+            var p = new
+            {
+                eventId = userEventModel.EventId,
+                userId = userEventModel.UserId
+            };
+
+            _sql.SaveData("dbo.JoinEvent", p, "ActivityDB");
+        }
+
+        public List<UserEventDTO> GetJoinedUsers(int eventId)
+        {
+            var output = _sql.LoadData<UserEventDTO, dynamic>("dbo.GetJoinedUsers", new { eventId = eventId }, "ActivityDB");
 
             return output;
         }
