@@ -61,6 +61,7 @@
     <Folder Include="StoredProcedures\RequestStoredProcedures" />
     <Folder Include="StoredProcedures\EventStoredProcedures" />
     <Folder Include="StoredProcedures\UserStoredProcedures" />
+    <Folder Include="StoredProcedures\UserEventStoredPeocedures" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\User.sql" />
@@ -79,6 +80,9 @@
     <Build Include="StoredProcedures\EventStoredProcedures\GetEvents.sql" />
     <Build Include="StoredProcedures\EventStoredProcedures\GetEventsByUserId.sql" />
     <Build Include="StoredProcedures\EventStoredProcedures\GetEventById.sql" />
+    <Build Include="Tables\UserEvent.sql" />
+    <Build Include="StoredProcedures\UserEventStoredPeocedures\JoinEvent.sql" />
+    <Build Include="StoredProcedures\UserEventStoredPeocedures\GetJoinedUsers.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Activity.DB.publish.xml" />

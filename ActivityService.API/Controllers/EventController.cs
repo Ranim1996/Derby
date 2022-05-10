@@ -1,5 +1,6 @@
 ﻿using ActivityService.DataLibrary.DataAccess.Interfaces;
 using ActivityService.DataLibrary.Models;
+using ActivityService.DataLibrary.Models.DTO;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 
@@ -58,5 +59,21 @@ namespace ActivityService.API.Controllers
         {
             _eventData.DeleteEvent(eventId, userId);
         }
+
+        [HttpPost]
+        [Route("joinevent")]
+        public void JoinEvent(UserEventModel userEventModel)
+        {
+            _eventData.JoinEvent(userEventModel);
+        }
+
+        [HttpGet]
+        [Route("getjoinedusers")]
+        public List<UserEventDTO> GetJoinedUsers(int eventId)
+        {
+            List<UserEventDTO> userEventModels = _eventData.GetJoinedUsers(eventId);
+            return userEventModels;
+        }
+
     }
 }
