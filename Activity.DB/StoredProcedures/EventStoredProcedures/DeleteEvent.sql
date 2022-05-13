@@ -4,6 +4,8 @@
 AS
 begin
 	set nocount on;
-	delete from [Event]
-	where Id = @eventId AND UserId = @userId
+
+	delete from [UserEvent] where EventId = @eventId AND UserId = @userId;
+
+	delete from [Event] where Id = @eventId AND UserId = @userId
 end
