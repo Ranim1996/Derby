@@ -4,6 +4,8 @@
 AS
 begin
 	set nocount on;
-	delete from [Request]
-	where Id = @requestId AND UserId = @userId
+
+	delete from [UserRequest] where RequestId = @requestId AND UserId = @userId;
+
+	delete from [Request] where Id = @requestId AND UserId = @userId
 end
