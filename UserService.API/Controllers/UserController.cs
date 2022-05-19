@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System;
 using UserService.DataLibrary.DataAccess;
 using UserService.DataLibrary.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace UserService.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(AuthenticationSchemes = "Bearer", Roles = "ADMIN")]
     public class UserController : ControllerBase
     {
         private readonly IUserData _userData;

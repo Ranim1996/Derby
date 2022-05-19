@@ -1,6 +1,7 @@
 ﻿using ActivityService.DataLibrary.DataAccess.Interfaces;
 using ActivityService.DataLibrary.Models;
 using ActivityService.DataLibrary.Models.DTO;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 
@@ -8,6 +9,7 @@ namespace ActivityService.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(AuthenticationSchemes = "Bearer")]
     public class EventController : ControllerBase
     {
         private readonly IEventData _eventData;
