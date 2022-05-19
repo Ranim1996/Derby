@@ -5,6 +5,8 @@ using System.Collections.Generic;
 
 namespace SearchService.API.Controllers
 {
+    [Route("api/[controller]")]
+    [ApiController]
     public class SearchController : ControllerBase
     {
         private readonly ISearchData _searchData;
