@@ -47,6 +47,7 @@ namespace AuthService.API.Controllers
 
         [HttpGet]
         [Route("getacconts")]
+        [Authorize(AuthenticationSchemes = "Bearer", Roles = "ADMIN")]
         public List<AccountModel> GetAccounts()
         {
             return _accountData.GetAccounts();

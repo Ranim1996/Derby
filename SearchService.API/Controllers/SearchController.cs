@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using SearchService.DataLibrary.DataAccess.Interfaces;
 using SearchService.DataLibrary.Models;
 using System.Collections.Generic;
@@ -7,6 +8,7 @@ namespace SearchService.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(AuthenticationSchemes = "Bearer")]
     public class SearchController : ControllerBase
     {
         private readonly ISearchData _searchData;
