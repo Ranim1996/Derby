@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.32126.315
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthService.API", "AuthService.API\AuthService.API.csproj", "{33B83478-C8A5-4FFE-863C-88254B94EC00}"
 EndProject
@@ -39,11 +39,16 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DerbyGateway", "DerbyGatewa
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SearchService", "SearchService", "{19C65B9D-523E-4AC1-8D3D-EB4FBDBF35F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchService.DataLibrary", "SearchService.DataLibrary\SearchService.DataLibrary.csproj", "{7E8D93E4-D200-417C-A9B3-683B774043BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SearchService.DataLibrary", "SearchService.DataLibrary\SearchService.DataLibrary.csproj", "{7E8D93E4-D200-417C-A9B3-683B774043BE}"
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Search.DB", "Search.DB\Search.DB.sqlproj", "{BB2EEAA4-CBD5-436F-8731-0ED6E066BE10}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchService.API", "SearchService.API\SearchService.API.csproj", "{BA6350F7-2351-4D52-978F-0F3D408FED5D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SearchService.API", "SearchService.API\SearchService.API.csproj", "{BA6350F7-2351-4D52-978F-0F3D408FED5D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LoadTesting", "LoadTesting", "{7F946855-D383-4B7C-B42D-9F389865B4CE}"
+	ProjectSection(SolutionItems) = preProject
+		LoadTesting.js = LoadTesting.js
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
