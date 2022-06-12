@@ -54,7 +54,6 @@ namespace ActivityService.DataLibrary.DataAccess
             var p = new
             {
                 eventId = eventModel.Id,
-                userId = eventModel.UserId,
                 eventTitle = eventModel.Title,
                 eventDescription = eventModel.Description,
                 eventDate = eventModel.When,
