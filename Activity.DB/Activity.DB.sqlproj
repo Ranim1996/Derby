@@ -89,7 +89,7 @@
     <Build Include="StoredProcedures\UserRequestStoredProcedures\GetResponses.sql" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Activity.DB.publish.xml" />
     <None Include="AZURE_Activity.DB.publish.xml" />
+    <None Include="Activity.DB.publish.xml" />
   </ItemGroup>
 </Project>
